@@ -1,5 +1,10 @@
 package com.capgemini.lpu.Passbook.entity;
 
+/**
+ * @author: G.Siva Sreeram<br/>
+ * @Description: This is an entity class which contains branch details
+ */
+
 public class Branch {
 	private String branchId;
 	private String branchName;

@@ -8,9 +8,8 @@ import com.capgemini.lpu.Passbook.entity.Transaction;
 /**
  * 
  * @author G.Siva Sreeram<br/>
- *         This is an interface.
+ *         This is an interface in Dao layer.
  *         It contains abstract methods
- *
  */
 
 public interface PassbookDao {

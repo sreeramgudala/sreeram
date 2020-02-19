@@ -24,12 +24,12 @@ public class PassbookRepository {
 	
 	static{
 		
-/**                       Branch(String  , String          , String      , String )	
+/**                       Branch(String  , String          , String      , String     )	
  */
-		Branch brnch1=new Branch("br1001","KONDAREDDY BURG","PCNA0001001","KURNOOL");
+		Branch brnch1=new Branch("br1001","KONDAREDDY BURG","PCNA0001001","KURNOOL"   );
 		Branch brnch2=new Branch("br1002","TEKKALI"        ,"PCNA0001002","SRIKAKULAM");
-		Branch brnch3=new Branch("br1003","NARASARAO PET"  ,"PCNA0001003","GUNTUR");
-		Branch brnch4=new Branch("br1004","MR PALLI"       ,"PCNA0001001","TIRUPATHI");
+		Branch brnch3=new Branch("br1003","NARASARAO PET"  ,"PCNA0001003","GUNTUR"    );
+		Branch brnch4=new Branch("br1004","MR PALLI"       ,"PCNA0001001","TIRUPATHI" );
 
 		
 /**                      Address(String      , String   , String           , String     , String         ,String , String , Branch) 
@@ -48,11 +48,11 @@ public class PassbookRepository {
 		LocalDate d5 = LocalDate.of(1999, 3, 13);
 
 
-		/**                Customer(String     , String       , Address , String ,String customerPan, String , String , LocalDate)
+		/**                Customer(String     , String       , Address , String ,String customerPan, String , String , LocalDate )
 		*/			
-		Customer cust1=new Customer("ct0001001", "Rao Ramesh"  , add1 , "121156982034", "XVGY258945", "9638521472" , "MALE" , d1);
-		Customer cust2=new Customer("ct0001552", "Babu Suresh" , add2 , "125153315555", "FBTN651513", "9513563153" , "MALE" , d1);
-		Customer cust3=new Customer("ct0005133", "Amma Kumar"  , add3 , "121211112546", "KJJK321543", "8984653165" , "MALE" , d1);
+		Customer cust1=new Customer("ct0001001", "Rao Ramesh"  , add1 , "121156982034", "XVGY258945", "9638521472" , "MALE"   , d1);
+		Customer cust2=new Customer("ct0001552", "Babu Suresh" , add2 , "125153315555", "FBTN651513", "9513563153" , "MALE"   , d1);
+		Customer cust3=new Customer("ct0005133", "Amma Kumar"  , add3 , "121211112546", "KJJK321543", "8984653165" , "MALE"   , d1);
 		Customer cust4=new Customer("ct0008946", "Manasa Reddy", add4 , "115511552165", "RTHF655588", "9865316645" , "FEMALE" , d1);
 		Customer cust5=new Customer("ct0008946", "Manasa Reddy", add4 , "115511552165", "RTHF655588", "9865316645" , "FEMALE" , d1);
 	

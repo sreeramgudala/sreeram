@@ -1,5 +1,10 @@
 package com.capgemini.lpu.Passbook.entity;
 
+/**
+ * @author: G.Siva Sreeram<br/>
+ * @Description: This is an entity class which contains transaction details
+ */
+
 import java.time.LocalDate;
 
 public class Transaction {

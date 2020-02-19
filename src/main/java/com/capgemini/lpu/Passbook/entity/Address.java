@@ -1,5 +1,10 @@
 package com.capgemini.lpu.Passbook.entity;
 
+/**
+ * @author: G.Siva Sreeram<br/>
+ * @Description: This is an entity class which contains customer address
+ */
+
 public class Address {
 	private String addressId;
 	private String addressLine1;

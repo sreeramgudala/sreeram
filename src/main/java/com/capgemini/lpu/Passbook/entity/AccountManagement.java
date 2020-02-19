@@ -1,5 +1,10 @@
 package com.capgemini.lpu.Passbook.entity;
 
+/**
+ * @author: G.Siva Sreeram<br/>
+ * @Description: This is an entity class which contains respective account id details
+ */
+
 import java.util.ArrayList;
 import java.time.LocalDate;
 import java.util.List;
