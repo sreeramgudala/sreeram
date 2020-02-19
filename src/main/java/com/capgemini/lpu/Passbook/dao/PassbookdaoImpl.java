@@ -12,9 +12,6 @@ public class PassbookdaoImpl implements PassbookDao {
 	
 	/**
 	 * This class implements methods of dao interface 
-	 * ques id will be the key and question will be the value maintained in the map
-	 * @return map returns the map that loaded all the questions from the file
-	 * @throws ExamException if error in reading/ file not found/ filenot having proper format
 	 */
 	
 	@Override
@@ -25,6 +22,7 @@ public class PassbookdaoImpl implements PassbookDao {
 		}
 		else
 			throw new AccountIdException();
+		
 	}
 
 	@Override

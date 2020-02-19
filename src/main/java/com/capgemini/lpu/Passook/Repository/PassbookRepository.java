@@ -42,8 +42,6 @@ public class PassbookRepository {
 		
 		
 		LocalDate d1 = LocalDate.of(1995, 1, 12);
-	//	LocalDate d7 = LocalDate.of(1995, 2, 22);
-	//	LocalDate d8 = LocalDate.of(1995, 3, 17);
 		LocalDate d2 = LocalDate.of(1996, 5, 26);
 		LocalDate d3 = LocalDate.of(1997, 8, 24);
 		LocalDate d4 = LocalDate.of(1998, 11, 11);
@@ -59,12 +57,12 @@ public class PassbookRepository {
 		Customer cust5=new Customer("ct0008946", "Manasa Reddy", add4 , "115511552165", "RTHF655588", "9865316645" , "FEMALE" , d1);
 	
 		
-		
-		
-		Transaction tran1=new Transaction("100000123456","Credit",5000.0,"slip",d5,"-","Rao Ramesh","self",203065.26);
-		Transaction tran5=new Transaction("100000123456","debit",4000.0,"slip",d4,"-","Rao Ramesh","self",198065.26);
-		Transaction tran6=new Transaction("100000123456","Credit",2000.0,"slip",d3,"-","Rao Ramesh","self",202065.26);
-		Transaction tran7=new Transaction("100000123456","debit",1515.0,"slip",d2,"-","Rao Ramesh","self",200065.26);
+		/**        		      Transaction(String        , String , double , String ,LocalDate,String , String     ,String, double ) {
+		 */			
+		Transaction tran1=new Transaction("100000123456","Credit",5000.0  ,"slip"  ,  d5     ,  "-"  ,"Rao Ramesh","self",203065.26);
+		Transaction tran5=new Transaction("100000123456","debit" ,4000.0  ,"slip"  ,  d4     ,  "-"  ,"Rao Ramesh","self",198065.26);
+		Transaction tran6=new Transaction("100000123456","Credit",2000.0  ,"slip"  ,  d3     ,  "-"  ,"Rao Ramesh","self",202065.26);
+		Transaction tran7=new Transaction("100000123456","debit" ,1515.0  ,"slip"  ,  d2     ,  "-"  ,"Rao Ramesh","self",200065.26);
 		
 		Transaction tran2=new Transaction("100000989565","Debit",89515.0,"slip",d5,"-","Babu Suresh","self",305067.86);
 		Transaction tran3=new Transaction("100000989565","Debiit",95615.0,"slip",d5,"-","Amma Kumar","self",500895.59);
@@ -83,7 +81,7 @@ public class PassbookRepository {
 		Transaction tran16=new Transaction("100000123459","Credit",12500.0,"slip",d5,"-","Manasa Reddy","self",850065.69);
 		
 		
-		
+	// Adding transaction into the List	
 		transList.add(tran1);
 		transList.add(tran5);
 		transList.add(tran6);
