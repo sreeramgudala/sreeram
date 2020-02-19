@@ -15,6 +15,10 @@ import com.capgemini.lpu.Passbook.entity.Transaction;
  * 
  * @author G.Siva Sreeram <br/>
  *         we use service layer for logic implementation
+ 
+ * Description: Here we are checking validations for account id and date.
+ *              for account id it may throw AccountIdException ,AccountIdNullException, AccountIdFormatException
+ *              As for Date it throws DateException.
  *
  */
 
@@ -22,16 +26,7 @@ import com.capgemini.lpu.Passbook.entity.Transaction;
 public class PassbookServiceImpl implements PassbookService {
 	
 	public PassbookDao dao = new PassbookdaoImpl();
-	
-	/**
-	 * Description: Here we are checking validations for account id and date.
-	 *              for account id it may throw AccountIdException ,AccountIdNullException, AccountIdFormatException
-	 *              As for Date it throws DateException.
-	 * @throws AccountIdException 
-	 * @throws AccountIdNullException 
-	 * @throws DateException 
-	 * @throws AccountIdFormatException   
-	 */
+
 
 	public List<Transaction> getTxns(String accid,LocalDate frm ,LocalDate to ) throws AccountIdException, AccountIdNullException, DateException, AccountIdFormatException  {
 		if(accid==null)
