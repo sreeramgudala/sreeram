@@ -24,7 +24,8 @@ public class PassbookRepository {
 	
 	static{
 		
-/**                       Branch(String  , String          , String      , String     )	
+/**                       Branch(String  , String          , String      , String     )
+ *                        Branch(branchId, branchName      , branchIFSC  , branchAddress)
  */
 		Branch brnch1=new Branch("br1001","KONDAREDDY BURG","PCNA0001001","KURNOOL"   );
 		Branch brnch2=new Branch("br1002","TEKKALI"        ,"PCNA0001002","SRIKAKULAM");
@@ -32,12 +33,13 @@ public class PassbookRepository {
 		Branch brnch4=new Branch("br1004","MR PALLI"       ,"PCNA0001001","TIRUPATHI" );
 
 		
-/**                      Address(String      , String   , String           , String     , String         ,String , String , Branch) 
+/**                      Address(String      , String   , String           , String     , String         ,String , String , Branch)
+ *                       Address(addressId   , addressLine1, addressLine2 , addressCity, addressState ,addressCountry,addressZipcode, branch)
 */	
-		Address add1=new Address("H No.12/9" ,"2nd line","Amaravathi Nagar","KURNOOL"   ,"ANDHRA PRADESH","INDIA","523110",brnch1);
-		Address add2=new Address("H No.14/6" ,"3rd line","Amar Nagar"      ,"SRIKAKULAM","ANDHRA PRADESH","INDIA","523101",brnch2);
-		Address add3=new Address("H No.356/5","1st line","Jyothi market"   ,"GUNTUR"    ,"ANDHRA PRADESH","INDIA","510110",brnch3);
-		Address add4=new Address("H No.23/1" ,"4th line","Maruthi Nagar"   ,"TIRUPATHI" ,"ANDHRA PRADESH","INDIA","532008",brnch4);
+		Address add1=new Address("H No.12/9" ,"2nd line","Amaravathi Nagar","KURNOOL"   ,"ANDHRA PRADESH", "INDIA" , "523110"  ,brnch1);
+		Address add2=new Address("H No.14/6" ,"3rd line","Amar Nagar"      ,"SRIKAKULAM","ANDHRA PRADESH", "INDIA" , "523101"  ,brnch2);
+		Address add3=new Address("H No.356/5","1st line","Jyothi market"   ,"GUNTUR"    ,"ANDHRA PRADESH", "INDIA" , "510110"  ,brnch3);
+		Address add4=new Address("H No.23/1" ,"4th line","Maruthi Nagar"   ,"TIRUPATHI" ,"ANDHRA PRADESH", "INDIA" , "532008"  ,brnch4);
 		
 		
 		
@@ -48,7 +50,7 @@ public class PassbookRepository {
 		LocalDate d5 = LocalDate.of(1999, 3, 13);
 
 
-		/**                Customer(String     , String       , Address , String ,String customerPan, String , String , LocalDate )
+		/**                Customer(String     , String       , Address , String      ,String      , String        , String , LocalDate )
 		*/			
 		Customer cust1=new Customer("ct0001001", "Rao Ramesh"  , add1 , "121156982034", "XVGY258945", "9638521472" , "MALE"   , d1);
 		Customer cust2=new Customer("ct0001552", "Babu Suresh" , add2 , "125153315555", "FBTN651513", "9513563153" , "MALE"   , d1);
@@ -57,12 +59,13 @@ public class PassbookRepository {
 		Customer cust5=new Customer("ct0008946", "Manasa Reddy", add4 , "115511552165", "RTHF655588", "9865316645" , "FEMALE" , d1);
 	
 		
-		/**        		      Transaction(String        , String , double , String ,LocalDate,String , String     ,String, double ) {
+		/**        		      Transaction(String        , String , double , String ,LocalDate,String , String     ,String, double )
+		 *                    Transaction(accountId   , transType, Amount,transOption, transDate,transCheckid,transFrom,transTo, closingbalance)
 		 */			
-		Transaction tran1=new Transaction("100000123456","Credit",5000.0  ,"slip"  ,  d5     ,  "-"  ,"Rao Ramesh","self",203065.26);
-		Transaction tran5=new Transaction("100000123456","debit" ,4000.0  ,"slip"  ,  d4     ,  "-"  ,"Rao Ramesh","self",198065.26);
-		Transaction tran6=new Transaction("100000123456","Credit",2000.0  ,"slip"  ,  d3     ,  "-"  ,"Rao Ramesh","self",202065.26);
-		Transaction tran7=new Transaction("100000123456","debit" ,1515.0  ,"slip"  ,  d2     ,  "-"  ,"Rao Ramesh","self",200065.26);
+		Transaction tran1=new Transaction("100000123456", "Credit",5000.0  ,"slip"  ,  d5     ,  "-"  , "Rao Ramesh" , "self", 203065.26);
+		Transaction tran5=new Transaction("100000123456", "debit" ,4000.0  ,"slip"  ,  d4     ,  "-"  , "Rao Ramesh" , "self", 198065.26);
+		Transaction tran6=new Transaction("100000123456", "Credit",2000.0  ,"slip"  ,  d3     ,  "-"  , "Rao Ramesh" , "self", 202065.26);
+		Transaction tran7=new Transaction("100000123456", "debit" ,1515.0  ,"slip"  ,  d2     ,  "-"  , "Rao Ramesh" , "self", 200065.26);
 		
 		Transaction tran2=new Transaction("100000989565","Debit",89515.0,"slip",d5,"-","Babu Suresh","self",305067.86);
 		Transaction tran3=new Transaction("100000989565","Debiit",95615.0,"slip",d5,"-","Amma Kumar","self",500895.59);

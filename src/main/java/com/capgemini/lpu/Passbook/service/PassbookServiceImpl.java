@@ -19,9 +19,7 @@ import com.capgemini.lpu.Passbook.entity.Transaction;
  * Description: Here we are checking validations for account id and date.
  *              for account id it may throw AccountIdException ,AccountIdNullException, AccountIdFormatException
  *              As for Date it throws DateException.
- *
  */
-
 
 public class PassbookServiceImpl implements PassbookService {
 	
